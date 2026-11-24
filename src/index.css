@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #2a2745;
+  background:
+    radial-gradient(60% 50% at 8% 8%, #dfe7fb 0%, transparent 70%),
+    radial-gradient(50% 45% at 95% 20%, #d6f3e8 0%, transparent 70%),
+    radial-gradient(55% 50% at 10% 85%, #e6dcf8 0%, transparent 70%),
+    radial-gradient(50% 45% at 92% 90%, #fbdde4 0%, transparent 70%),
+    #eef1fa;
+  background-attachment: fixed;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 40px -12px rgba(90, 80, 160, 0.18);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+.tile { background: rgba(255, 255, 255, 0.7); border-radius: 1rem; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border-radius: .9rem; padding: .6rem 1rem; font-size: .875rem; font-weight: 600;
+  background: rgba(255,255,255,.85); border: 1px solid rgba(120,110,190,.18); transition: background .15s;
+}
+.btn:hover:not(:disabled) { background: #fff; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+:focus-visible { outline: 2px solid #5b4fe0; outline-offset: 2px; }
+input[type='range'] { accent-color: #5b4fe0; }
